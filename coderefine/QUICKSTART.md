@@ -4,8 +4,8 @@
 
 ### Step 1: Get Your API Keys (2 minutes)
 
-#### Gemini API Key
-1. Go to https://makersuite.google.com/app/apikey
+#### Groq API Key
+1. Go to https://console.groq.com/keys
 2. Click "Create API Key"
 3. Copy the key
 
@@ -29,7 +29,7 @@ pip install flask flask-cors google-generativeai supabase python-dotenv
 
 Create `.env` file:
 ```env
-GEMINI_API_KEY=your-gemini-key-here
+GROQ_API_KEY=your-groq-key-here
 SUPABASE_URL=https://yourproject.supabase.co
 SUPABASE_KEY=your-anon-key-here
 ```
@@ -78,22 +78,6 @@ print(calculate_sum(numbers))
 ```
 
 Click "Analyze Code" or "Improve Performance" to see the magic!
-
-## ⚠️ Troubleshooting
-
-**Can't login?**
-- Check Supabase URL and key in `.env`
-- Make sure backend is running
-
-**Analysis not working?**
-- Verify Gemini API key
-- Check backend terminal for errors
-
-**Port already in use?**
-```bash
-# Use different port for frontend
-python -m http.server 3000
-```
 
 ## 📱 What Works
 
